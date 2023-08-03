@@ -180,6 +180,13 @@ craft.faker.navigation(4)
 craft.faker.navigation(4, true)
 ```
 
+## Redactor
+Designed to mimic a Redactor field, the function will accept a single string and return a Redactor\FieldData object.
+
+```
+craft.faker.redactor("A string that can contain <u>HTML</u>")
+```
+
 ## Contact 
 Jordan Beattie <br>
 jordan@mission10.co.uk <br>

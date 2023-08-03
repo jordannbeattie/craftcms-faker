@@ -99,5 +99,13 @@ Class FakerVariable
     {
         return new Icon($icon, $sprite, $glyphId, $glyphName, $iconSet, $type, $css, $width, $height);
     }
+
+    public function redactor( $copy )
+    {
+        return $field = new \craft\redactor\FieldData( $copy );
+        $field->content = $copy;
+        $field->charset = "UTF-8";
+        return $field;
+    }
     
 }
